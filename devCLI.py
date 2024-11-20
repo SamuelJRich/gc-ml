@@ -66,16 +66,15 @@ def collect():
         inputsCollected -=1
         
     print('~ ~ All data collected ~ ~') 
+    
+    print(userGoals, userTargets, userEquipment, userLevel) 
+        
+        
+        
+            
+            
 
+
+    
     
 collect()
-        
-        
-        
-            
-            
-
-
-    
-    
-    
