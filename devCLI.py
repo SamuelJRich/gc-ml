@@ -49,19 +49,19 @@ def collect():
     while inputsCollected != 0:
         
         print('Strength, Size, Cardio')
-        goalsIn = input('Enter your current fitness goal: ')
+        goalsIn = input('Enter your current fitness goal: ').strip().lower()
         stsv(goalsIn, 'goal', userGoals, userTargets, userEquipment, userLevel)
         inputsCollected -=1
         print('Chest, Back, Biceps, Triceps, Shoulders, Abdominal, Legs')
-        targetsIn = input('Enter the areas you would like to target: ')
+        targetsIn = input('Enter the areas you would like to target: ').strip().lower()
         stsv(targetsIn, 'target', userGoals, userTargets, userEquipment, userLevel)
         inputsCollected -=1
         print('Bodyweight, Resistance band, Dumbbells, Machines, Kettlebell, Barbell')
-        equipmentIn = input('Enter your current equipment: ')
+        equipmentIn = input('Enter your current equipment: ').strip().lower()
         stsv(equipmentIn, 'equipment', userGoals, userTargets, userEquipment, userLevel)
         inputsCollected -=1
         print('Beginner, Intermediate, Advanced')
-        levelIn = input('Enter your current level: ')
+        levelIn = input('Enter your current level: ').strip().lower()
         stsv(levelIn, 'level', userGoals, userTargets, userEquipment, userLevel)
         inputsCollected -=1
         
