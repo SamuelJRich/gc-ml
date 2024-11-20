@@ -9,6 +9,34 @@ equipment = ['Bodyweight', 'Resistance band', 'Dumbbells', 'Machines', 'Kettlebe
 
 level = ['Beginner', 'Intermediate', 'Advanced']
 
+    # Function for ensuring all collected data is 'standard format' and stored in the relevant lists.
+def stsv(userIn, category, userGoals, userTargets, userEquipment, userLevel):
+        
+
+        
+        if category == 'goal':
+            split = userIn.split()
+            for i in split:
+                if i in [g.lower() for g in goals]:
+                    userGoals.append(i)
+                    
+        elif category == 'target':
+            split = userIn.split()
+            for i in split:
+                if i in [t.lower() for t in targets]:
+                    userTargets.append(i)
+        
+        elif category == 'equipment':
+            split = userIn.split()
+            for i in split:
+                if i in[e.lower() for e in equipment]:
+                    userEquipment.append(i)
+        
+        elif category == 'level':
+            split = userIn.split()
+            for i in split:
+                if i in[l.lower() for l in level]:
+                    userLevel.append(i)
 
 def collect():
     
@@ -38,5 +66,12 @@ def collect():
     
 collect()
         
+        
+        
+            
+            
+
+
+    
     
     
