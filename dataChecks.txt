@@ -1,18 +1,18 @@
 ## megagymdataset ##
 
-All types of equipment:
- ['Bands' 'Barbell' 'Kettlebells' 'Dumbbell' 'Other' 'Cable' 'Machine'
- 'Body Only' 'Medicine Ball' nan 'Exercise Ball' 'Foam Roll'
- 'E-Z Curl Bar']
+ All types of workout:
+ ['Strength' 'Plyometrics' 'Cardio' 'Stretching' 'Powerlifting' 'Strongman'
+ 'Olympic Weightlifting']
 
  All types of muscle:
  ['Abdominals' 'Adductors' 'Abductors' 'Biceps' 'Calves' 'Chest' 'Forearms'
  'Glutes' 'Hamstrings' 'Lats' 'Lower Back' 'Middle Back' 'Traps' 'Neck'
  'Quadriceps' 'Shoulders' 'Triceps']
 
- All types of workout:
- ['Strength' 'Plyometrics' 'Cardio' 'Stretching' 'Powerlifting' 'Strongman'
- 'Olympic Weightlifting']
+All types of equipment:
+ ['Bands' 'Barbell' 'Kettlebells' 'Dumbbell' 'Other' 'Cable' 'Machine'
+ 'Body Only' 'Medicine Ball' nan 'Exercise Ball' 'Foam Roll'
+ 'E-Z Curl Bar']
 
  All types of level:
  ['Intermediate' 'Beginner' 'Expert']
