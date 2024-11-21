@@ -11,3 +11,10 @@ df = pd.read_csv("d1.csv")
 # .drop removes the respective columns, .dropna removes any rows that contain NaN within the data.
 df = df.drop(columns=['Desc', 'Rating', 'RatingDesc'])
 df = df.dropna()
+
+
+# Encode any categorical data into numeric values, due to restraints of text data.
+le = LabelEncoder()
+ohe = OneHotEncoder()
+oe = OrdinalEncoder()
+
