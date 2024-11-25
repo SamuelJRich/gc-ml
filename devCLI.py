@@ -1,13 +1,22 @@
 # Used for 'simulating' user-data collection during the development phase.
 
 goals = ['Strength', 'Size', 'Cardio']
+goals =  ['Strength' 'Plyometrics' 'Cardio' 'Stretching' 'Powerlifting' 'Strongman'
+ 'Olympic Weightlifting']
 
 targets = ['Chest(Pectorals)', 'Back(Latissimus Dorsi)', 'Back(Traps)', 'Back(Spinal Erectors)',
            'Biceps', 'Triceps', 'Shoulders(Deltoid)', 'Abdominal', 'Legs(Hamstrings)', 'Legs(Quadriceps)', 'Legs(Glutes)']
+targets =  ['Abdominals' 'Adductors' 'Abductors' 'Biceps' 'Calves' 'Chest' 'Forearms'
+ 'Glutes' 'Hamstrings' 'Lats' 'Lower Back' 'Middle Back' 'Traps' 'Neck'
+ 'Quadriceps' 'Shoulders' 'Triceps']
 
 equipment = ['Bodyweight', 'Resistance band', 'Dumbbells', 'Machines', 'Kettlebell', 'Barbell']
+equipment = ['Bands' 'Barbell' 'Kettlebells' 'Dumbbell' 'Other' 'Cable' 'Machine'
+ 'Body Only' 'Medicine Ball' 'Exercise Ball' 'Foam Roll'
+ 'E-Z Curl Bar']
 
 level = ['Beginner', 'Intermediate', 'Advanced']
+level = ['Beginner', 'Intermediate', 'Expert']
 
     # Function for ensuring all collected data is 'standard format' and stored in the relevant lists.
 def stsv(userIn, category, userGoals, userTargets, userEquipment, userLevel):
