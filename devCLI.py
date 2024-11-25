@@ -13,6 +13,7 @@ equipment = ['Bands' 'Barbell' 'Kettlebells' 'Dumbbell' 'Other' 'Cable' 'Machine
 
 level = ['Beginner', 'Intermediate', 'Expert']
 
+# Function for ensuring all collected data is 'standard format' and stored in the relevant lists.
 def stsv(userIn, category, userGoals, userTargets, userEquipment, userLevel):
         
 
