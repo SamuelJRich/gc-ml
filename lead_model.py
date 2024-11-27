@@ -49,3 +49,8 @@ print("Number of null values ", df.isnull().sum())
 
 # +
 # See screenshot 'catboost results'
+
+target_output = 'ExerciseName'
+df.dropna(inplace=True)
+X = df.drop(columns=[target_output])
+y = df[target_output]
