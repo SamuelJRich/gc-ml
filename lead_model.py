@@ -71,3 +71,6 @@ catboost_model = CatBoostClassifier(
     task_type='GPU', # Enables GPU Acceleration
     devices = [0] # Use the first available GPU (Index of 0)
 )
+
+catboost_model.fit(X_train, y_train)
+
