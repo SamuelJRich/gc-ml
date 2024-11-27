@@ -17,3 +17,12 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from catboost import CatBoostClassifier
+
+
+df = pd.read_csv('main_ds.csv')
+print("Number of null values ", df.isnull().sum())
+
+
+df = df.drop(columns=['Desc', 'Type', 'Level', 'Rating', 'RatingDesc' ])
+df = df.drop(columns=['Unnamed: 0'])
+print(df.head())
