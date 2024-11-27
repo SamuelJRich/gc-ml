@@ -54,3 +54,6 @@ target_output = 'ExerciseName'
 df.dropna(inplace=True)
 X = df.drop(columns=[target_output])
 y = df[target_output]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=30)
+
