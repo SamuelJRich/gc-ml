@@ -33,3 +33,11 @@ df.dropna(inplace=True)
 print("Number of null values ", df.isnull().sum())
 
 # +
+
+df.rename(columns={
+    'Title': 'ExerciseName',
+    'BodyPart': 'TargetMuscle',
+}, inplace=True)
+
+print(df.head())
+
