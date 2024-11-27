@@ -41,3 +41,11 @@ df.rename(columns={
 
 print(df.head())
 
+# -
+
+print(df.columns)
+
+print("Number of null values ", df.isnull().sum())
+
+# +
+# See screenshot 'catboost results'
