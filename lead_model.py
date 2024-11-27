@@ -26,3 +26,10 @@ print("Number of null values ", df.isnull().sum())
 df = df.drop(columns=['Desc', 'Type', 'Level', 'Rating', 'RatingDesc' ])
 df = df.drop(columns=['Unnamed: 0'])
 print(df.head())
+
+print("Number of null values ", df.isnull().sum())
+
+df.dropna(inplace=True)
+print("Number of null values ", df.isnull().sum())
+
+# +
