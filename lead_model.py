@@ -60,3 +60,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 categorical = ['TargetMuscle', 'Equipment']
 
+# Initialise CatBoost model
+catboost_model = CatBoostClassifier(
+    iterations=150,         # Number of boosting rounds
+    depth=6,               # Depth of trees
+    learning_rate=0.1,      # Learning rate
+    cat_features=categorical,
+    random_state=30,
+    verbose=15,
+    task_type='GPU', # Enables GPU Acceleration
+    devices = [0] # Use the first available GPU (Index of 0)
+)
